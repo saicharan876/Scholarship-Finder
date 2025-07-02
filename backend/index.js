@@ -21,4 +21,4 @@ mongoose.connect("mongodb://localhost:27017/Scholarship_Finder")
 
 
 // Start server
-app.listen(PORT, () => console.log(`✅ Server Connected To Port: ${PORT}`));
+app.listen(PORT, () => console.log(`Server Connected To Port: ${PORT}`));

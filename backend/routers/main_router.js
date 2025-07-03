@@ -1,9 +1,15 @@
-const express = require('express');
+const express = require("express");
+const {
+  fetchScholarshipsCom,
+  getAllScholarships,
+  getScholarshipsForStudent,
+} = require("../controllers/scholarship_controllers.js");
+const {Auth} = require('../middleware/auth.js');
 
 const router = express.Router();
 
-router.get('/home');
-router.get('/all');
-router.get('/myschl');
+router.get("/fetch",fetchScholarshipsCom);
+router.get("/all",getAllScholarships);
+router.get("/myschl",Auth,getScholarshipsForStudent);
 
-module.exports = router ;
+module.exports = router;

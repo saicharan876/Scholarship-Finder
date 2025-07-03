@@ -1,0 +1,70 @@
+body, html, #root {
+  height: 100%;
+  background-color: #18191a; 
+}
+
+.my-sch-container {
+  max-width: 950px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(to right, #232526 0%, #34343a 100%);
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 10px 28px rgba(20, 20, 40, 0.19);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #b39ddb;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #23252655;
+}
+
+.loading-text, .no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #9575cd;
+  margin-top: 2rem;
+}
+
+.scholarship-cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.card {
+  background: linear-gradient(100deg, #292933 80%, #232526 100%);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 6px solid #7c4dff;
+  box-shadow: 0 8px 20px rgba(20, 20, 40, 0.11);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(100deg, #2e294e 80%, #34343a 100%);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #d1baff;
+  font-weight: 700;
+}
+
+.card-detail {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  color: #d1c4e9;
+  font-size: 0.95rem;
+}
+
+.card-detail svg {
+  margin-right: 0.5rem;
+  color: #b39ddb;
+}

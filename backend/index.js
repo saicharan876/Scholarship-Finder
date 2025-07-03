@@ -4,6 +4,7 @@ const cors = require('cors');
 const PORT = 5000;
 
 const AuthRouter = require('./routers/auth_router');
+const ScholarshipRouter = require('./routers/main_router')
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(cors());
 
 
 app.use('/',AuthRouter);
+app.use('/scholarships',ScholarshipRouter);
 
 // DB connect
 mongoose.connect("mongodb://localhost:27017/Scholarship_Finder")
